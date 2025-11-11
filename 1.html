@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Fractions Décimales - CM2 | CM1 </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            background: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+            padding: 10px;
+            font-size: 13px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 15px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #2980b9;
+            margin: 10px 0 8px 0;
+            font-size: 1.1em;
+        }
+        
+        .definition-box {
+            background: #e8f4fc;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid #3498db;
+            font-size: 0.95em;
+        }
+        
+        .example-box {
+            background: #fff;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border: 1px dashed #3498db;
+            font-size: 0.95em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: center;
+        }
+        
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 3px;
+            font-size: 0.9em;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding: 0 3px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 3px;
+        }
+        
+        .show-answer-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.85em;
+            margin: 5px 0;
+            transition: background 0.3s;
+        }
+        
+        .show-answer-btn:hover {
+            background: #2980b9;
+        }
+        
+        .answer {
+            display: none;
+            background: #e8f4fc;
+            padding: 8px;
+            border-radius: 3px;
+            margin: 6px 0;
+            border-left: 3px solid #3498db;
+            font-size: 0.9em;
+        }
+        
+        .exercise {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid #e74c3c;
+            font-size: 0.95em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        
+        li {
+            margin-bottom: 4px;
+        }
+        
+        p {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        
+        .emoji {
+            font-size: 1.1em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="emoji">🔢</span> Les Fractions Décimales</h1>
+            <div class="subtitle">Apprends en t'amusant !</div>
+        </header>
+        
+        <div class="content">
+            <section class="section" id="fractions-decimales">
+                <h2><span class="emoji">1️⃣</span> Les Fractions Décimales</h2>
+                
+                <div class="definition-box">
+                    <h3><span class="emoji">🎯</span> C'est quoi une fraction décimale ?</h3>
+                    <p>Une <strong>fraction décimale</strong> est une fraction où le nombre en dessous est :</p>
+                    <ul>
+                        <li>10 → on dit "dixièmes"</li>
+                        <li>100 → on dit "centièmes"</li>
+                        <li>1000 → on dit "millièmes"</li>
+                    </ul>
+                </div>
+                
+                <div class="example-box">
+                    <h3><span class="emoji">📚</span> Exemples</h3>
+                    <table>
+                        <tr>
+                            <th>Fraction</th>
+                            <th>Comment on lit</th>
+                            <th>Écriture décimale</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">10</span>
+                                </div>
+                            </td>
+                            <td>Trois dixièmes</td>
+                            <td><strong>0,3</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fraction">
+                                    <span class="numerator">25</span>
+                                    <span class="denominator">100</span>
+                                </div>
+                            </td>
+                            <td>Vingt-cinq centièmes</td>
+                            <td><strong>0,25</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fraction">
+                                    <span class="numerator">7</span>
+                                    <span class="denominator">1000</span>
+                                </div>
+                            </td>
+                            <td>Sept millièmes</td>
+                            <td><strong>0,007</strong></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="exercise">
+                    <h3><span class="emoji">💪</span> À toi de jouer !</h3>
+                    <p>Convertis ces fractions en nombres décimaux :</p>
+                    
+                    <p>
+                        <div class="fraction">
+                            <span class="numerator">7</span>
+                            <span class="denominator">10</span>
+                        </div>
+                        = ?
+                    </p>
+                    <button class="show-answer-btn" onclick="toggleAnswer('answer1')">Voir la réponse</button>
+                    <div id="answer1" class="answer">
+                        <p><span class="emoji">✅</span> 7/10 = <strong>0,7</strong> (sept dixièmes)</p>
+                    </div>
+                    
+                    <p>
+                        <div class="fraction">
+                            <span class="numerator">34</span>
+                            <span class="denominator">100</span>
+                        </div>
+                        = ?
+                    </p>
+                    <button class="show-answer-btn" onclick="toggleAnswer('answer2')">Voir la réponse</button>
+                    <div id="answer2" class="answer">
+                        <p><span class="emoji">✅</span> 34/100 = <strong>0,34</strong> (trente-quatre centièmes)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p><span class="emoji">🎉</span> Félicitations ! Tu as appris les fractions décimales ! <span class="emoji">🎉</span></p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
