@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Parties d'un Nombre Décimal - CM2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            background: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+            padding: 10px;
+            font-size: 13px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 15px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #2980b9;
+            margin: 10px 0 8px 0;
+            font-size: 1.1em;
+        }
+        
+        .definition-box {
+            background: #e8f4fc;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid #3498db;
+            font-size: 0.95em;
+        }
+        
+        .example-box {
+            background: #fff;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border: 1px dashed #3498db;
+            font-size: 0.95em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: center;
+        }
+        
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .math-expression {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1em;
+            padding: 8px;
+            text-align: center;
+            background: #f8f9fa;
+            border-radius: 4px;
+            margin: 8px 0;
+        }
+        
+        .show-answer-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.85em;
+            margin: 5px 0;
+            transition: background 0.3s;
+        }
+        
+        .show-answer-btn:hover {
+            background: #2980b9;
+        }
+        
+        .answer {
+            display: none;
+            background: #e8f4fc;
+            padding: 8px;
+            border-radius: 3px;
+            margin: 6px 0;
+            border-left: 3px solid #3498db;
+            font-size: 0.9em;
+        }
+        
+        .exercise {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid #e74c3c;
+            font-size: 0.95em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        
+        li {
+            margin-bottom: 4px;
+        }
+        
+        p {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        
+        .emoji {
+            font-size: 1.1em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="emoji">🔢</span> Les Parties d'un Nombre Décimal</h1>
+            <div class="subtitle">Niveau CM2 - Apprends en t'amusant !</div>
+        </header>
+        
+        <div class="content">
+            <section class="section" id="parties-nombre-decimal">
+                <h2><span class="emoji">3️⃣</span> Les Parties d'un Nombre Décimal</h2>
+                
+                <div class="definition-box">
+                    <h3><span class="emoji">🎯</span> Les deux parties importantes</h3>
+                    <p>Un nombre décimal a toujours deux parties :</p>
+                    <ul>
+                        <li><strong>Partie entière</strong> → à gauche de la virgule</li>
+                        <li><strong>Partie décimale</strong> → à droite de la virgule</li>
+                    </ul>
+                </div>
+                
+                <div class="example-box">
+                    <h3><span class="emoji">📚</span> Exemple : 78,426</h3>
+                    <table>
+                        <tr>
+                            <th>Partie entière</th>
+                            <th>Virgule</th>
+                            <th>Partie décimale</th>
+                        </tr>
+                        <tr>
+                            <td style="background:#e8f4fc;">78</td>
+                            <td>,</td>
+                            <td style="background:#fff8e1;">426</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="math-expression">
+                        78,426 = 78 + 0,426
+                    </div>
+                    
+                    <p><strong><span class="emoji">🔍</span> Décomposition :</strong></p>
+                    <ul>
+                        <li>7 dizaines et 8 unités</li>
+                        <li>4 dixièmes</li>
+                        <li>2 centièmes</li>
+                        <li>6 millièmes</li>
+                    </ul>
+                </div>
+                
+                <div class="exercise">
+                    <h3><span class="emoji">💪</span> À toi de jouer !</h3>
+                    <p>Décompose ce nombre : 15,73</p>
+                    <button class="show-answer-btn" onclick="toggleAnswer('answer5')">Voir la réponse</button>
+                    <div id="answer5" class="answer">
+                        <p><span class="emoji">✅</span> 15,73 = 15 + 0,73</p>
+                        <p>Partie entière : 15 (1 dizaine et 5 unités)</p>
+                        <p>Partie décimale : 73 (7 dixièmes et 3 centièmes)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p><span class="emoji">🎉</span> Félicitations ! Tu as appris les parties d'un nombre décimal ! <span class="emoji">🎉</span></p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
